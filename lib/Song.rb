@@ -38,7 +38,11 @@ class Song
     song
   end
 
-  def self.find_by_name(song_name)
-    @@all.find {|song| song.name == song_name}
-  end 
+  def self.find_by_name(song)
+    @@all.find {|song| song.name == song}
+  end
+
+  def self.find_or_create_by_name(song)
+    self.find_by_name(song) == nil ? self.create(song) : self.find_by_name(song)
+  end
 end
