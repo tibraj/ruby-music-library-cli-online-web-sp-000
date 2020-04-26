@@ -13,7 +13,7 @@ class Artist
 
   def genres
     @artist_genres = []
-    @songs.collect {|song| @artist_genres << song.genre unless @artist_genres.include?(song.genre) }
+    @songs.collect {|song| @artist_genres << song.genre }
   end
   def self.all
     @@all
