@@ -18,8 +18,8 @@ class Genre
   end
 
   def self.create(name)
-    Genre.new.tap do |genre|
+    genre = Genre.new(name)
     genre.save
-  end
+    genre
   end
 end
