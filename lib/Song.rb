@@ -4,7 +4,7 @@ class Song
   @@all = []
   def initialize(name, artist="artist")
     @name = name
-    self.artist = artist if artist
+    @artist = artist
   end
 
   def artist=(artist)
