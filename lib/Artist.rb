@@ -8,6 +8,7 @@ class Artist
 
   def add_song(song)
     song.artist = self if song.artist != nil
+  end
 
 
   def self.all
