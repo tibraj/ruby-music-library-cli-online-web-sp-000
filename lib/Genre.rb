@@ -7,9 +7,9 @@ class Genre
   end
 
   def artists
-      genre_artists = @songs.collect {|song| song.artist}
-      genre_artists.uniq
-    end
+    genre_artists = @songs.collect {|song| song.artist}
+    genre_artists.uniq
+  end
 
   def self.all
     @@all
