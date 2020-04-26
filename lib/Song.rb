@@ -13,7 +13,7 @@ class Song
   end
 
   def genre
-    song.genre = self
+    self.genre = self
   end
 
   def self.all
