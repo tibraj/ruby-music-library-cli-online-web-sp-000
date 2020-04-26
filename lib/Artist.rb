@@ -12,8 +12,7 @@ class Artist
   end
 
   def genres
-    @artist_genres = []
-    @songs.collect {|song| @artist_genres << song.genre }
+    @songs.collect {|song| song.genre }
   end
   def self.all
     @@all
