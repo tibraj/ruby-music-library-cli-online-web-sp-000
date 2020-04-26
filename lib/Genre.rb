@@ -6,12 +6,12 @@ class Genre
     @songs = []
   end
 
-  def artists 
+  def artists
     def genres
       genre_artists = @songs.collect {|song| song.artist}
       genre_artists.uniq
     end
-  
+
   def self.all
     @@all
   end
