@@ -6,10 +6,7 @@ class Artist
     @songs = []
   end
 
-  def add_song(song)
-    song.artist == nil ? song.artist = self : nil
-    @songs << song unless @songs.include?(song)
-  end
+
 
   def self.all
     @@all
