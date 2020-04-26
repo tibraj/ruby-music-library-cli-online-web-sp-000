@@ -47,7 +47,7 @@ class Song
   end
 
   def self.new_from_filename(filename)
-    arr = filename.split(" - ")
+    array = filename.split(" - ")
     artist_name = array[0], song_name = array[1]
     genre_name = array[2].split(".mp3").join
     artist = Artist.find_or_create_by_name(artist_name)
