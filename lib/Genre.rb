@@ -21,4 +21,5 @@ class Genre
     Genre.new.tap do |genre|
     genre.save
   end
+  end
 end
