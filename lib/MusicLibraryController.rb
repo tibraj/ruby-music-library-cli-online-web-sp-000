@@ -8,6 +8,7 @@ class MusicLibraryController
 
   def call
     input = gets.strip 
+    if input != exit
     puts "Welcome to your music library!"
     puts "To list all of your songs, enter 'list songs'."
     puts "To list all of the artists in your library, enter 'list artists'."
@@ -18,6 +19,21 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
 
-
-  end
+    case input 
+    when "list songs"
+      list_songs
+    when "list artists"
+      list_artists
+    when "list_genres"
+      list_genres
+    when "list artist"
+      list_songs_by_artist
+    when "list genre"
+      list_songs_by_genre
+    when "play song"
+      play_song
+    end 
+  end 
 end
+
+
